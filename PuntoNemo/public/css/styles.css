@@ -1,0 +1,8 @@
+.logo {
+    animation: logo 6s infinite;
+}
+@keyframes logo {
+    0% {opacity: 25%}
+    50% {opacity: 100%; transform: translateY(-20px);}
+    100% {opacity: 25%}
+}
