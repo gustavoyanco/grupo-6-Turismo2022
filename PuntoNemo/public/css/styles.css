@@ -1,4 +1,167 @@
-.logo {
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+
+/* Colores
+grisCálidoClaro: #ebebe3
+grisCálidoMedio: #d8d8d1
+grisLogoClaro: #6c6b6c
+grisLogoOscuro: #333333
+naranjaLogo: #ff6633
+rojoLogo: #cc0000
+
+*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: #ebebe3;
+    padding: 1rem;
+}
+
+a {
+    font-family: 'Ubuntu', 'sans-serif';
+    color:#6c6b6c;
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
+}
+
+.navBar ul {
+    align-items: center;
+    list-style: none
+}
+.logo img{
+    width: 80%;
+    max-width: 700px;
+}
+.topHeader{
+    text-align: center;
+}
+.headerBarra{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+}
+/*carrousel*/
+[carrousel] {
+    display: flex;
+    position: relative;
+    background-color: #d8d8d1;
+}
+[carrousel]::before {
+    content: '';
+    display: block;
+    padding-bottom: 50%;
+}
+[carrousel] [name~="carrousel"] {
+    display: none;
+}
+[carrousel] [name~="carrousel"]:checked + .slide {
+    pointer-events: auto;
+    opacity: 1;
+}
+[carrousel] [name~="carrousel"]:checked + .slide .slide-content {
+    opacity: 1;
+}
+[carrousel] .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[carrousel] .slide-content {
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s;
+    position: relative;
+    height: inherit;
+}
+[carrousel] .back, [carrousel] .forward {
+    position: absolute;
+    top: calc(50% - 1rem);
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 1rem;
+    background-color: #ebebe3;
+    border-radius: 20%;
+    color: #0f3b1d;
+    transform: scale(0.9);
+    transition: transform 0.2s;
+    z-index: 10;
+}
+[carrousel] .back:hover, [carrousel] .forward:hover {
+    transform: scale(1);
+    background-color: #d8d8d1;
+    color: #cc0000;
+}
+[carrousel] .back {
+    left: calc(0% + 1rem);
+}
+[carrousel] .forward {
+    right: calc(0% + 1rem);
+}
+[carrousel] .itemCarrousel {
+    display: flex;
+    align-items: center;
+}  
+.mainPhrase {
+    color: #333333;
+    text-align: center;
+}
+.destinoNombre {
+    font-family: 'Ubuntu';
+    font-size: 1.6rem;
+    color: #ff6633;
+    line-height: 0.6;
+}
+.destinoLugar {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 0.6;
+    
+}
+.destinoDuracion {
+    line-height: 0.5;
+}
+main section .viaje{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    max-height: 30%;
+}
+main section img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+main section .viajeDetalle{
+    background-color: rgba(0,0,0,0.3);
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 10px;
+}
+
+
+/*.logo {
     animation: logo 6s infinite;
 }
 @keyframes logo {
@@ -6,3 +169,4 @@
     50% {opacity: 100%; transform: translateY(-20px);}
     100% {opacity: 25%}
 }
+*/
