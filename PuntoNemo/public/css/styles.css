@@ -160,6 +160,64 @@ main section .viajeDetalle{
     border-radius: 10px;
 }
 
+/*estilos detalle producto */
+.boton-comprar-detalle-producto{
+
+    background-color: #ff6633;
+    width:100%;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+  
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .boton-comprar-detalle-producto:hover,
+  .boton-comprar-detalle-producto:focus {
+    background-color: #ff6633;
+  }
+  
+  .detalle-producto-informacionyprecio{
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 0;
+     }
+
+  .detalle-producto{
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0;
+   }
+  
+  .precio-detalle-producto{
+      display: flex;
+      text-align: center;
+      color:#0f3b1d;
+      font-size:1.4em ;
+      padding: 0 15px 0 15px
+  }
+
+
 
 /*.logo {
     animation: logo 6s infinite;
@@ -170,3 +228,16 @@ main section .viajeDetalle{
     100% {opacity: 25%}
 }
 */
+
+
+
+@media (min-width: 600px) {
+    .boton-comprar-detalle-producto{
+        width:auto;
+        position:relative
+    }
+    .detalle-producto{
+        flex-direction: row;
+    }
+    
+  }
