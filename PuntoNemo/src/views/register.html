@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuntoNemo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- estandarizar visualización en navegadores-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- iconos de Google -->
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="topHeader">
+            <span class="logo">
+                <img src="/images/PuntoNemoLogoHorizontal.svg">
+            </span>
+        </div>
+        <div class="headerBarra">
+            <button class="material-symbols-outlined" type="submit">menu</button>
+
+            <form action="#" method="GET">
+                <input type="text" name="buscar" placeholder="Buscar viajes y destinos" class="input" id="buscar">
+                <button class="material-symbols-outlined" type="submit">search</button>
+            </form>
+            <span class="material-symbols-outlined">
+                login
+            </span>
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="#">Destinos <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Paquetes <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Contacto <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h3>Bienvenido a </h3>
+            <h2>Punto Nemo</h2>
+            <p>Acá podrás programas y organizar el viaje que te sueñas</p>
+
+            <form action="/registro" method="post">
+                <h4>Crea tu Cuenta</h4>
+                <div class="infoPersonal">
+                    <input type="text" name="nombre" placeholder="Nombre completo" class="input" minlength="4" required>
+                    <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input" minlength="4"
+                        required>
+                    <input type="email" name="email" placeholder="Email" class="input" required>
+                    <input type="text" name="domicilio" placeholder="Domicilio" class="input" required>
+                </div>
+                <br>
+                <h4>Fecha de Nacimiento</h4>
+                <div class="fechaNacimiento">
+                    <input type="date" name="fechaNacimiento" class="input" id="fechaNacimiento" required>
+                </div>
+                <br>
+                <h4>Perfil viajero:</h4>
+                <div class="tipo-viajero">
+                    <div>
+                        <input type="checkbox" name="tipo-viajero" value="familiar" class="categorias" id="familiar">
+                        <label for="familiar">Familiar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo-viajero" value="aventurero" class="categorias"
+                            id="aventurero">
+                        <label for="aventurero">Aventurero</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo-viajero" value="Lujoso" class="categorias" id="Lujoso">
+                        <label for="Lujoso">Lujoso</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo-viajero" value="cultural" class="categorias" id="cultural">
+                        <label for="cultural">Cultural</label>
+                    </div>
+                </div>
+                <h4>Crea una Contraseña</h4>
+                <div class="contraseña">
+                    <input type="password" name="password" placeholder="Password" class="input" minlength="6" required>
+                    <input type="password" name="password" placeholder="Confirm Password" class="input" minlength="6"
+                        required>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="enviar">Enviar</button>
+                <br>
+                <br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+
+</body>
+
+</html>
