@@ -53,62 +53,76 @@
         </div>
     </header>
 
-    <main class="main-register">
-        <section>
-            <h3>Bienvenido a </h3>
-            <h2>Punto Nemo</h2>
-            <p>Acá podrás programas y organizar el viaje que te sueñas</p>
 
-            <form action="/registro" method="post">
-                <h4>Crea tu Cuenta</h4>
-                <div class="info-personal">
-                    <input type="text" name="nombre" placeholder="Nombre completo" class="input-register" minlength="4" required>
-                    <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input-register" minlength="4"
-                        required>
-                    <input type="email" name="email" placeholder="Email" class="input-register" required>
-                    <input type="text" name="domicilio" placeholder="Domicilio" class="input-register" required>
-                </div>
-                <br>
-                <h4>Fecha de Nacimiento</h4>
-                <div class="fecha-nacimiento">
-                    <input type="date" name="fechaNacimiento" class="input-register" id="fechaNacimiento" required>
-                </div>
-                <br>
-                <h4>Perfil viajero:</h4>
-                <div class="perfil-viajero">
-                    <div>
-                        <input type="checkbox" name="tipo-viajero" value="familiar" class="categorias" id="familiar">
-                        <label for="familiar">Familiar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="tipo-viajero" value="aventurero" class="categorias"
-                            id="aventurero">
-                        <label for="aventurero">Aventurero</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="tipo-viajero" value="Lujoso" class="categorias" id="Lujoso">
-                        <label for="Lujoso">Lujoso</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="tipo-viajero" value="cultural" class="categorias" id="cultural">
-                        <label for="cultural">Cultural</label>
-                    </div>
-                </div>
-                <h4>Crea una Contraseña</h4>
-                <div class="contraseña">
-                    <input type="password" name="password" placeholder="Password" class="input-register" minlength="6" required>
-                    <input type="password" name="password" placeholder="Confirm Password" class="input-register" minlength="6"
-                        required>
-                </div>
-                <br>
-                <br>
-                <button type="submit" class="enviar-registro">Enviar</button>
-                <br>
-                <br>
-            </form>
-        </section>
-    </main>
+    <section class="cuerpo-registro">
+        <div class="conf-banner">
+        <img class="banner-registro" src="images/Group-of-friends-registro.jpg" alt="banner registro">
+        <img class="banner-registro2" src="images/group-of-friends-relaxing.jpg" alt="banner registro">
+        </div>
 
+        <main class="main-register">
+
+            <section>
+                <div class="introduccion-register">
+                    <h3>Bienvenido a </h3>
+                    <h2>Punto Nemo</h2>
+                    <p>Acá podrás agendar y organizar el viaje de tus sueños</p>
+                </div>
+                <form action="/registro" method="post">
+                    <h4>Crea tu Cuenta</h4>
+                    <div class="info-personal">
+                        <input type="text" name="nombre" placeholder="Nombre completo" class="input-register"
+                            minlength="4" required>
+                        <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input-register"
+                            minlength="4" required>
+                        <input type="email" name="email" placeholder="Email" class="input-register" required>
+                        <input type="text" name="domicilio" placeholder="Domicilio" class="input-register" required>
+                    </div>
+                    <h4>Fecha de Nacimiento</h4>
+                    <div class="fecha-nacimiento">
+                        <input type="date" name="fechaNacimiento" class="input-register" id="fechaNacimiento" required>
+                    </div>
+                    <h4>Perfil Viajero:</h4>
+                    <div class="perfil-viajero">
+                        <div>
+                            <input type="checkbox" name="tipo-viajero" value="familiar" class="categorias"
+                                id="familiar">
+                            <label for="familiar">Familiar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viajero" value="aventurero" class="categorias"
+                                id="aventurero">
+                            <label for="aventurero">Aventurero</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viajero" value="Lujoso" class="categorias" id="Lujoso">
+                            <label for="Lujoso">Lujoso</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viajero" value="cultural" class="categorias"
+                                id="cultural">
+                            <label for="cultural">Cultural</label>
+                        </div>
+                    </div>
+                    <h4>Crea una Contraseña</h4>
+                    <div class="contraseña">
+                        <input type="password" name="password" placeholder="Password" class="input-register"
+                            minlength="6" required>
+                        <input type="password" name="password" placeholder="Confirm Password" class="input-register"
+                            minlength="6" required>
+                    </div>
+                    <button type="submit" class="enviar-registro">Registrate Ahora</button>
+                    <br>
+                </form>
+                <section></section>
+                    <p class="sin-registro">¿Quieres reservar un viaje sin crear una cuenta?<a href="#"> Haz clic aquí</a></p>
+                    <div class="derechos-register">
+                        <p>Copyrights 2022.</p>
+                        <p>Todos los derechos reservados.</p>
+                    </div>
+                </section>
+        </main>
+    </section>
     <footer>
         <p>Pie de página</p>
     </footer>
