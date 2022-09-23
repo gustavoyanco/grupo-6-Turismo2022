@@ -221,7 +221,14 @@ main section .viajeDetalle{
   
   
   
-/*estilos detalle producto */
+/*estilos carrito */
+
+nav {
+    display : flex ;
+    flex-direction : row ;
+    background-color: #333333;
+}
+
 
 
 
