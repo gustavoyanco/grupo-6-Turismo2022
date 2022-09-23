@@ -23,9 +23,10 @@ body {
 
 a {
     font-family: 'Ubuntu', 'sans-serif';
-    color:#6c6b6c;
+    color: #6c6b6c;
     text-decoration: none;
 }
+
 a:hover {
     color: #333333;
 }
@@ -34,39 +35,48 @@ a:hover {
     align-items: center;
     list-style: none
 }
-.logo img{
+
+.logo img {
     width: 80%;
     max-width: 700px;
 }
-.topHeader{
+
+.topHeader {
     text-align: center;
 }
-.headerBarra{
+
+.headerBarra {
     display: flex;
     flex: wrap;
     align-items: center;
 }
+
 /*carrousel*/
 [carrousel] {
     display: flex;
     position: relative;
     background-color: #d8d8d1;
 }
+
 [carrousel]::before {
     content: '';
     display: block;
     padding-bottom: 50%;
 }
+
 [carrousel] [name~="carrousel"] {
     display: none;
 }
-[carrousel] [name~="carrousel"]:checked + .slide {
+
+[carrousel] [name~="carrousel"]:checked+.slide {
     pointer-events: auto;
     opacity: 1;
 }
-[carrousel] [name~="carrousel"]:checked + .slide .slide-content {
+
+[carrousel] [name~="carrousel"]:checked+.slide .slide-content {
     opacity: 1;
 }
+
 [carrousel] .slide {
     position: absolute;
     top: 0;
@@ -79,6 +89,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
 [carrousel] .slide-content {
     display: flex;
     opacity: 0;
@@ -86,7 +97,9 @@ a:hover {
     position: relative;
     height: inherit;
 }
-[carrousel] .back, [carrousel] .forward {
+
+[carrousel] .back,
+[carrousel] .forward {
     position: absolute;
     top: calc(50% - 1rem);
     height: 2rem;
@@ -103,54 +116,66 @@ a:hover {
     transition: transform 0.2s;
     z-index: 10;
 }
-[carrousel] .back:hover, [carrousel] .forward:hover {
+
+[carrousel] .back:hover,
+[carrousel] .forward:hover {
     transform: scale(1);
     background-color: #d8d8d1;
     color: #cc0000;
 }
+
 [carrousel] .back {
     left: calc(0% + 1rem);
 }
+
 [carrousel] .forward {
     right: calc(0% + 1rem);
 }
+
 [carrousel] .itemCarrousel {
     display: flex;
     align-items: center;
-}  
+}
+
 .mainPhrase {
     color: #333333;
     text-align: center;
 }
+
 .destinoNombre {
     font-family: 'Ubuntu';
     font-size: 1.6rem;
     color: #ff6633;
     line-height: 0.6;
 }
+
 .destinoLugar {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 0.6;
-    
+
 }
+
 .destinoDuracion {
     line-height: 0.5;
 }
-main section .viaje{
+
+main section .viaje {
     position: relative;
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
     max-height: 30%;
 }
+
 main section img {
     width: 100%;
     margin: auto;
     border-radius: 10px;
 }
-main section .viajeDetalle{
-    background-color: rgba(0,0,0,0.3);
+
+main section .viajeDetalle {
+    background-color: rgba(0, 0, 0, 0.3);
     width: 90%;
     padding: 10px;
     margin: auto;
@@ -161,10 +186,10 @@ main section .viajeDetalle{
 }
 
 /*estilos detalle producto */
-.boton-comprar-detalle-producto{
+.boton-comprar-detalle-producto {
 
     background-color: #ff6633;
-    width:100%;
+    width: 100%;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -180,7 +205,7 @@ main section .viajeDetalle{
     margin: 0;
     outline: none;
     padding: 10px 16px;
-  
+
     text-align: center;
     text-decoration: none;
     transition: color 100ms;
@@ -190,42 +215,42 @@ main section .viajeDetalle{
     touch-action: manipulation;
     position: sticky;
     bottom: 0;
-  }
-  
-  .boton-comprar-detalle-producto:hover,
-  .boton-comprar-detalle-producto:focus {
+}
+
+.boton-comprar-detalle-producto:hover,
+.boton-comprar-detalle-producto:focus {
     background-color: #ff6633;
-  }
-  
-  .detalle-producto-informacionyprecio{
-      display: flex;
-      flex-direction: row;
-      flex: 1 1 0;
-     }
+}
 
-  .detalle-producto{
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 0;
-   }
-  
-  .precio-detalle-producto{
-      display: flex;
-      text-align: center;
-      color:#0f3b1d;
-      font-size:1.4em ;
-      padding: 0 15px 0 15px
-  }
+.detalle-producto-informacionyprecio {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+}
 
-  
-  
-  
-  
+.detalle-producto {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.precio-detalle-producto {
+    display: flex;
+    text-align: center;
+    color: #0f3b1d;
+    font-size: 1.4em;
+    padding: 0 15px 0 15px
+}
+
+
+
+
+
 /*estilos carrito */
 
 nav {
-    display : flex ;
-    flex-direction : row ;
+    display: flex;
+    flex-direction: row;
     background-color: #333333;
 }
 
@@ -233,104 +258,188 @@ nav {
 
 /* Estilos register */
 
-.main-register{
+.main-register {
     text-align: center;
-    background-color:  #d8d8d1;
+    background-color: #d8d8d1;
     padding: 20px;
     border: 5%;
-    
-   }
-
-.main-register section {
-    border-color: #ff6633;
+    box-shadow: 0px 0px 10px grey;
 }
 
-   .input-register{
-       width: 80%;
-       margin: 15px;
-       padding: 8px;
-       border-radius: 8px;
-       border-color: #ff6633;
-   }
-   
-   .main-register h4{
-       text-align: left;
-       padding: 8px;
-   }
-   
-   .perfil-viajero input{
-       padding: 10px;
-   }
-   
-   .perfil-viajero label{
-       padding: 10px;
-   }
 
-   .info-personal{
-    display:flex;
+.banner-registro2 {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    display: none;
+}
+
+.banner-registro {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+} 
+
+.introduccion-register{
+    background-color:#ff6633;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    border: 8%;
+    box-shadow: 0px 0px 10px grey
+}
+
+.introduccion-register h3 {
+    margin: 2px;
+    font-size: 2vh;
+}
+
+.introduccion-register h2 {
+    margin: 2px;
+    color: white;
+}
+
+.introduccion-register p {
+    margin: 2px;
+}
+
+.input-register {
+    width: 80%;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0px
+}
+
+.main-register h4 {
+    text-align: left;
+    padding: 8px;
+    margin: 5px;
+}
+
+.perfil-viajero input {
+    padding: 10px;
+}
+
+.perfil-viajero label {
+    padding: 10px;
+}
+
+.info-personal {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
 }
 
-   
-   .perfil-viajero{
-       text-align: left;
-       padding: 8px;
-   }
-   
-   .perfil-viajero div{
-       padding: 15px;
-   }
-   
-   .categorias {
-       margin: 10px;
-   }
 
-   .enviar-registro{
-       margin: 10px;
-       width: 70%;
-       padding: 8px;
-       background-color: #ff6633;
-       color: white;
-       border: 0;
-       border-radius: 8px;
-   }
-   
-   .enviar-registro:hover{
-       background-color: #fe8b65;
-   }
-   
+.perfil-viajero {
+    text-align: left;
+    padding: 8px;
+    justify-content: center;
+}
+
+.perfil-viajero div {
+    padding: 15px;
+}
+
+.perfil-viajero div label {
+    padding: 0px;
+}
+
+.categorias {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.enviar-registro {
+    margin: 10px;
+    width: 70%;
+    padding: 8px;
+    background-color: #ff6633;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+}
+
+.enviar-registro:hover {
+    background-color: #fe8b65;
+}
+
+.derechos-register p{
+    margin: 1px;
+}
 
 
-   @media (min-width: 361px){
-  
 
-    .input-register{
+@media (min-width: 361px) {
+    .input-register {
         width: 33%;
     }
-    .tipo-viajero{
+
+    .tipo-viajero {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-   }
-
-   @media (min-width: 769px){
-
-
-    .tipo-viajero{
+    .perfil-viajero{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .contraseña{
+}
+
+@media (min-width: 769px) {
+    .main-register{
+        padding: 8px;
+    }
+    .cuerpo-registro{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .conf-banner{
+        width:50%;
+    }
+
+    .input-register{
+        width: 45%;
+    }
+
+    .banner-registro{
+        width: 100%;
+    }
+
+    .main-register{
+        width: 50%;
+    }
+
+    .introduccion-register h3 {
+        font-size: 20px ;
+    }
+
+    .introduccion-register h2 {
+    font-size: 50px;
+    }
+
+    .banner-registro{
+        display: none;
+    }
+
+    .banner-registro2{
+        display: block;
+    }
+
+    .perfil-viajero div {
+        padding: 3px;
+    }
+
+
 
 }
 
@@ -350,12 +459,13 @@ nav {
 
 
 @media (min-width: 600px) {
-    .boton-comprar-detalle-producto{
-        width:auto;
-        position:relative
+    .boton-comprar-detalle-producto {
+        width: auto;
+        position: relative
     }
-    .detalle-producto{
+
+    .detalle-producto {
         flex-direction: row;
     }
-    
-  }
+
+}
