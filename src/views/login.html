@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body class="login-body">
+    <header class="encabezado-login">
+        <div class="topHeader">
+            <span class="logo">
+                <img src="/images/PuntoNemoLogoHorizontal.svg">
+            </span>
+        </div>
+        <div class="headerBarra">
+            <button class="material-symbols-outlined" type="submit">menu</button>
+
+            <form action="#" method="GET">              
+                <button class="material-symbols-outlined" type="submit">search</button>
+            </form>
+            <span class="material-symbols-outlined">
+                login
+            </span>
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+        <div class="nav-bar-login">
+            <ul>
+                <li><a href="#">Destinos <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Paquetes <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+                <li><a href="#">Contacto <span class="material-symbols-outlined">
+                            arrow_drop_down</a></li></span>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-login">
+        <section class="left-main">
+            <img class= "logo-cuadrado" src="/images/PuntoNemoLogoCuadrado.svg" alt="Logo Punto Nemo">
+        </section>
+        <section class="rigth-main">
+            <form action="/login" method="POST">
+                <h1 class="titulo-login">Ingresá a tu cuenta</h1>
+                <input class="forms" type="text" name="email" placeholder="Correo electronico" required>
+                <input class="forms" type="password" name="contraseña" placeholder="Contraseña" required>
+                <button class="boton-ingresar"type="submit">Ingresar</button>
+                <p class="boton-nueva-cuenta"><a href="#">Crear nueva cuenta</a></p>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
