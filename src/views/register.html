@@ -10,7 +10,6 @@
     <!-- estandarizar visualización en navegadores-->
     <link rel="stylesheet" href="/css/normalize.css">
     <!-- iconos de Google -->
-    <link rel="stylesheet" href="/css/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
@@ -52,7 +51,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-register">
         <section>
             <h3>Bienvenido a </h3>
             <h2>Punto Nemo</h2>
@@ -60,21 +59,21 @@
 
             <form action="/registro" method="post">
                 <h4>Crea tu Cuenta</h4>
-                <div class="infoPersonal">
-                    <input type="text" name="nombre" placeholder="Nombre completo" class="input" minlength="4" required>
-                    <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input" minlength="4"
+                <div class="info-personal">
+                    <input type="text" name="nombre" placeholder="Nombre completo" class="input-register" minlength="4" required>
+                    <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input-register" minlength="4"
                         required>
-                    <input type="email" name="email" placeholder="Email" class="input" required>
-                    <input type="text" name="domicilio" placeholder="Domicilio" class="input" required>
+                    <input type="email" name="email" placeholder="Email" class="input-register" required>
+                    <input type="text" name="domicilio" placeholder="Domicilio" class="input-register" required>
                 </div>
                 <br>
                 <h4>Fecha de Nacimiento</h4>
-                <div class="fechaNacimiento">
-                    <input type="date" name="fechaNacimiento" class="input" id="fechaNacimiento" required>
+                <div class="fecha-nacimiento">
+                    <input type="date" name="fechaNacimiento" class="input-register" id="fechaNacimiento" required>
                 </div>
                 <br>
                 <h4>Perfil viajero:</h4>
-                <div class="tipo-viajero">
+                <div class="perfil-viajero">
                     <div>
                         <input type="checkbox" name="tipo-viajero" value="familiar" class="categorias" id="familiar">
                         <label for="familiar">Familiar</label>
@@ -95,13 +94,13 @@
                 </div>
                 <h4>Crea una Contraseña</h4>
                 <div class="contraseña">
-                    <input type="password" name="password" placeholder="Password" class="input" minlength="6" required>
-                    <input type="password" name="password" placeholder="Confirm Password" class="input" minlength="6"
+                    <input type="password" name="password" placeholder="Password" class="input-register" minlength="6" required>
+                    <input type="password" name="password" placeholder="Confirm Password" class="input-register" minlength="6"
                         required>
                 </div>
                 <br>
                 <br>
-                <button type="submit" class="enviar">Enviar</button>
+                <button type="submit" class="enviar-registro">Enviar</button>
                 <br>
                 <br>
             </form>

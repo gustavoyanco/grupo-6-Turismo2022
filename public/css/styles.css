@@ -231,8 +231,108 @@ nav {
 
 
 
+/* Estilos register */
+
+.main-register{
+    text-align: center;
+    background-color:  #d8d8d1;
+    padding: 20px;
+    border: 5%;
+    
+   }
+
+.main-register section {
+    border-color: #ff6633;
+}
+
+   .input-register{
+       width: 80%;
+       margin: 15px;
+       padding: 8px;
+       border-radius: 8px;
+       border-color: #ff6633;
+   }
+   
+   .main-register h4{
+       text-align: left;
+       padding: 8px;
+   }
+   
+   .perfil-viajero input{
+       padding: 10px;
+   }
+   
+   .perfil-viajero label{
+       padding: 10px;
+   }
+
+   .info-personal{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+   
+   .perfil-viajero{
+       text-align: left;
+       padding: 8px;
+   }
+   
+   .perfil-viajero div{
+       padding: 15px;
+   }
+   
+   .categorias {
+       margin: 10px;
+   }
+
+   .enviar-registro{
+       margin: 10px;
+       width: 70%;
+       padding: 8px;
+       background-color: #ff6633;
+       color: white;
+       border: 0;
+       border-radius: 8px;
+   }
+   
+   .enviar-registro:hover{
+       background-color: #fe8b65;
+   }
+   
 
 
+   @media (min-width: 361px){
+  
+
+    .input-register{
+        width: 33%;
+    }
+    .tipo-viajero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   }
+
+   @media (min-width: 769px){
+
+
+    .tipo-viajero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contraseña{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
 
 
 
