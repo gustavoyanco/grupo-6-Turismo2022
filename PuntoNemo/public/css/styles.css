@@ -241,3 +241,70 @@ main section .viajeDetalle{
     }
     
   }
+
+/* Estilos del Login */
+.login-body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar-login, .logo-cuadrado{
+    display: none;
+}
+.main-login{
+    display: flex;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.encabezado-login{
+    background-color: #ebebe3;
+}
+.rigth-main{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    width: 90vw;
+    flex-direction: column;
+}
+.titulo-login{
+    font-size: 1.2em;
+}
+.forms{
+    margin: 15px 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+
+}
+.boton-ingresar{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ff6633;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.boton-nueva-cuenta{
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.rigth-main p{
+    text-align: center;
+    width: 30%;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+.rigth-main a{
+    color: #FFFFFF;
+}
+@media (min-width: 361px){
+    .logo-cuadrado{
+        display: flex;
+    }
+}
