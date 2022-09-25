@@ -10,40 +10,42 @@
     <title>Login</title>
 </head>
 <body class="login-body">
-    <header class="encabezado-login">
-        <div class="topHeader">
-            <span class="logo">
-                <img src="/images/PuntoNemoLogoHorizontal.svg">
-            </span>
+    <header>
+        <div class="topLogo">
+          <a href="/">
+            <img src="/images/PuntoNemoLogoHorizontal.svg"></a>
         </div>
-        <div class="headerBarra">
-            <button class="material-symbols-outlined" type="submit">menu</button>
-
-            <form action="#" method="GET">              
-                <button class="material-symbols-outlined" type="submit">search</button>
-            </form>
-            <span class="material-symbols-outlined">
-                login
-            </span>
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
-        </div>
-        <div class="nav-bar-login">
+        <div class="containerBarra">
+          <div class="navBar">
             <ul>
-                <li><a href="#">Destinos <span class="material-symbols-outlined">
-                            arrow_drop_down</a></li></span>
-                <li><a href="#">Paquetes <span class="material-symbols-outlined">
-                            arrow_drop_down</a></li></span>
-                <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
-                            arrow_drop_down</a></li></span>
-                <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
-                            arrow_drop_down</a></li></span>
-                <li><a href="#">Contacto <span class="material-symbols-outlined">
-                            arrow_drop_down</a></li></span>
+              <li><a href="#">Destinos <span class="material-symbols-outlined">
+                    arrow_drop_down</a></li></span>
+              <li><a href="#">Paquetes <span class="material-symbols-outlined">
+                    arrow_drop_down</a></li></span>
+              <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
+                    arrow_drop_down</a></li></span>
+              <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
+                    arrow_drop_down</a></li></span>
+              <li><a href="#">Contacto <span class="material-symbols-outlined">
+                    arrow_drop_down</a></li></span>
             </ul>
+          </div>
+          <div class="headerBusquedaBotones">
+            <span class="burgerMenu">
+              <button class="material-symbols-outlined" type="submit">menu</button>
+            </span>
+            <form action="#" method="GET">
+              <input type="text" name="buscar" placeholder="Buscar viajes y destinos" class="input" id="buscar">
+              <button class="material-symbols-outlined" type="submit">search</button>
+            </form>
+            <a href="login">
+              <button class="material-symbols-outlined">login</button></a>
+            <a href="/productCart">
+              <button class="material-symbols-outlined">shopping_cart</button></a>
+          </div>
+    
         </div>
-    </header>
+      </header>
 
     <main class="main-login">
         <section class="left-main">
