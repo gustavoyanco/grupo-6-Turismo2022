@@ -5,6 +5,9 @@ Sitios referentes: https://www.kilometrounoviajes.com.ar/
                    https://www.contiki.com/en-au/destinations/asia
                    https://topadventure.com/
                    http://www.kingmidas.com.ar/
+                   
+Link de Trello para el seguimeinto del Proyecto Integrador
+https://trello.com/invite/b/Cafd7D2w/9a2d016dbc3321a1e594e3abd73ba403/puntonemo
 
 Acerca de los integrantes del equipo:
 
