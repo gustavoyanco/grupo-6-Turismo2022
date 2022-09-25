@@ -9,10 +9,10 @@ Sitios referentes: https://www.kilometrounoviajes.com.ar/
 Link de Trello para el seguimeinto del Proyecto Integrador
 https://trello.com/invite/b/Cafd7D2w/9a2d016dbc3321a1e594e3abd73ba403/puntonemo
 
+Retrospectiva Sprint 1 : Como grupo pudimos consolidar bastante bien desde el principio , rápidamente nos pusimos de acuerdo con la temática del Market Place , utilizamos la herramienta Trello para poder visualizar y ordenar mejor las tareas que cada uno debía realizar . Este primer Sprint , nos pareció relativamente sencillo , esperamos poder continuar con la misma organización en los demás sprint y seguir aprendiendo juntos en cada uno de ellos , notando las virtudes y defectos de cada integrante y así poder complementarnos y apoyarnos mutuamente para lograr juntos cada uno de los Sprint con éxito . 
+
 Acerca de los integrantes del equipo:
 
-Cami D´ascencao
-Soy de Buenos Aires , Argentina. Estoy estudiando Lic. en Sistemas y me anoté en este curso para poder complementar la carrera y adquirir nuevos conocimientos que me ayuden a crecer profesionalmente.
 Soy Camila D´ascencao, de Buenos Aires , Argentina. Estoy estudiando Lic. en Sistemas y me anoté en este curso para poder complementar la carrera y adquirir nuevos conocimientos que me ayuden a crecer profesionalmente.
 
 Nicolás León
