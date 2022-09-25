@@ -13,84 +13,97 @@
     
     </head>
 <body>
-    <header>
-        <div class="topHeader">
-            <span class="logo">
-                <img src="/images/PuntoNemoLogoHorizontal.svg">
-            </span>
-        </div>
-        <div class="headerBarra">
-            <button class="material-symbols-outlined" type="submit">menu</button>
+  <header>
+    <div class="topLogo">
+      <a href="/">
+        <img src="/images/PuntoNemoLogoHorizontal.svg"></a>
+    </div>
+    <div class="containerBarra">
+      <div class="navBar">
+        <ul>
+          <li><a href="#">Destinos <span class="material-symbols-outlined">
+                arrow_drop_down</a></li></span>
+          <li><a href="#">Paquetes <span class="material-symbols-outlined">
+                arrow_drop_down</a></li></span>
+          <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
+                arrow_drop_down</a></li></span>
+          <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
+                arrow_drop_down</a></li></span>
+          <li><a href="#">Contacto <span class="material-symbols-outlined">
+                arrow_drop_down</a></li></span>
+        </ul>
+      </div>
+      <div class="headerBusquedaBotones">
+        <span class="burgerMenu">
+          <button class="material-symbols-outlined" type="submit">menu</button>
+        </span>
+        <form action="#" method="GET">
+          <input type="text" name="buscar" placeholder="Buscar viajes y destinos" class="input" id="buscar">
+          <button class="material-symbols-outlined" type="submit">search</button>
+        </form>
+        <a href="login">
+          <button class="material-symbols-outlined">login</button></a>
+        <a href="/productCart">
+          <button class="material-symbols-outlined">shopping_cart</button></a>
+      </div>
 
-            <form action="#" method="GET">
-                <input type="text" name="buscar" placeholder="Buscar viajes y destinos" class="input" id="buscar">
-                <button class="material-symbols-outlined" type="submit">search</button>
-            </form>
-            <span class="material-symbols-outlined">
-                login
-            </span>
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
-       
-    </header>
-    <main>
-        <section>
-          <div class="detalle-producto">
-            <div class="foto-en-detalle-producto">
-                <section carrousel>
-  
-                    <input id="slide-0" name="carrousel" type="radio" checked/>
-                    <div class="slide">
-                      <label for="slide-3" class="back"><span class="material-symbols-outlined">
-                        arrow_back_ios</span>
-                        </label>
-                      <div class="slide-content">
-                        <img class="itemCarrousel" src="/images/img_0001_TierraColores-Santa Cruz-Ar.jpg">
-                    </div>
-                      <label for="slide-1" class="forward"><span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span></label>
-                    </div>
-                    
-                    <input id="slide-1" name="carrousel" type="radio" />
-                    <div class="slide">
-                      <label for="slide-0" class="back"><span class="material-symbols-outlined">
-                        arrow_back_ios</span></label>
-                      <div class="slide-content">
-                        <img class="itemCarrousel" src="/images/img_0002_FizRoy-Ar.jpg">
-                    </div>
-                      <label for="slide-2" class="forward"><span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span></label>
-                    </div>
-                    
-                    <input id="slide-2" name="carrousel" type="radio" />
-                    <div class="slide">
-                      <label for="slide-1" class="back"><span class="material-symbols-outlined">
-                        arrow_back_ios</span></label>
-                      <div class="slide-content">
-                        <img class="itemCarrousel" src="/images/img_0003_CuevasWaitomo-NuevaZelanda.jpg">
-                    </div>
-                      <label for="slide-3" class="forward"><span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span></label>
-                    </div>  
-                  
-                    <input id="slide-3" name="carrousel" type="radio" />
-                    <div class="slide">
-                      <label for="slide-2" class="back"><span class="material-symbols-outlined">
-                        arrow_back_ios</span></label>
-                      <div class="slide-content">
-                        <img class="itemCarrousel" src="/images/img_0004_ViaductoGlenfinnan-Escocia.jpg">
-                    </div>
-                      <label for="slide-0" class="forward"><span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span></label>
-                    </div>
-                    
-                  </section>
-                </div>
+    </div>
+  </header>
+
+  <!--inicio del carrousel-->
+  <main>
+    <section carrousel>
+
+      <input id="slide-0" name="carrousel" type="radio" checked />
+      <div class="slide">
+        <label for="slide-3" class="back"><span class="material-symbols-outlined">
+            arrow_back_ios</span>
+        </label>
+        <div class="slide-content">
+          <img class="itemCarrousel" src="/images/img_0001_TierraColores-Santa Cruz-Ar.jpg">
+        </div>
+        <label for="slide-1" class="forward"><span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></label>
+      </div>
+
+      <input id="slide-1" name="carrousel" type="radio" />
+      <div class="slide">
+        <label for="slide-0" class="back"><span class="material-symbols-outlined">
+            arrow_back_ios</span></label>
+        <div class="slide-content">
+          <img class="itemCarrousel" src="/images/img_0002_FizRoy-Ar.jpg">
+        </div>
+        <label for="slide-2" class="forward"><span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></label>
+      </div>
+
+      <input id="slide-2" name="carrousel" type="radio" />
+      <div class="slide">
+        <label for="slide-1" class="back"><span class="material-symbols-outlined">
+            arrow_back_ios</span></label>
+        <div class="slide-content">
+          <img class="itemCarrousel" src="/images/img_0003_CuevasWaitomo-NuevaZelanda.jpg">
+        </div>
+        <label for="slide-3" class="forward"><span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></label>
+      </div>
+
+      <input id="slide-3" name="carrousel" type="radio" />
+      <div class="slide">
+        <label for="slide-2" class="back"><span class="material-symbols-outlined">
+            arrow_back_ios</span></label>
+        <div class="slide-content">
+          <img class="itemCarrousel" src="/images/img_0004_ViaductoGlenfinnan-Escocia.jpg">
+        </div>
+        <label for="slide-0" class="forward"><span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></label>
+      </div>
+    </section>
+    <!--fin del carrousel-->
             <div class="detalle-producto-informacionyprecio">
                 <ul>
                     <li>2 personas</li>
@@ -143,6 +156,31 @@
             </div>
         </section>
     </main>
+    <footer>
+      <div class="footerLinksInternos">
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Consejos para viajeros</a></li>
+          <li><a href="#">Asistencia médica</a></li>
+          <li><a href="#">Seguros de viaje</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+      </ul>
+      </div>
+      <div class="footerLinksExternos">
+        <ul>
+          <li><a href="https://www.argentina.tur.ar/#!/ar/home">Argentina Turismo</a></li>
+          <li><a href="https://previaje.gob.ar">Previaje</a></li>
+          <li><a href="#https://www.argentina.travel/es/page/terms-and-conditions?menu=places">Visit Argentina</a></li>
+          <li><a href="https://www.assistcard.com/ar?gclid=Cj0KCQjw1bqZBhDXARIsANTjCPIalc4Nmd9RI3HkI-qZUNzsi0B14MTmgbc2XBI5ssTmnYzKRUqfx68aAkufEALw_wcB">Assist Card</a></li>
+          <li><a href="https://traveler-assistance.com/?gclid=Cj0KCQjw1bqZBhDXARIsANTjCPLyvd4lvxFluTPhHP6YOJlMBS7W7JHJh2iGeeg1JLsS_PlWBoMfywMaAu6TEALw_wcB">Traveller assistance</a></li>
+      </ul>
+      </div>
+      <div class="logoFooter">
+        <a href="/">
+          <img src="/images/PuntoNemoLogoCuadradoBlanco.svg">
+        </a>
+      </div>
+    </footer>
    </body>
 </html>
 
