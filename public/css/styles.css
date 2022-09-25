@@ -221,7 +221,6 @@ main section .viajeDetalle {
 .boton-comprar-detalle-producto:focus {
     background-color: #ff6633;
 }
-<<<<<<< HEAD
 
 .detalle-producto-informacionyprecio {
     display: flex;
@@ -241,39 +240,6 @@ main section .viajeDetalle {
     color: #0f3b1d;
     font-size: 1.4em;
     padding: 0 15px 0 15px
-=======
-
-.detalle-producto-informacionyprecio {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0;
-}
-
-.detalle-producto {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
-}
-
-.precio-detalle-producto {
-    display: flex;
-    text-align: center;
-    color: #0f3b1d;
-    font-size: 1.4em;
-    padding: 0 15px 0 15px
-}
-
-
-
-
-
-/*estilos carrito */
-
-nav {
-    display: flex;
-    flex-direction: row;
-    background-color: #333333;
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
 }
 
 
@@ -330,26 +296,6 @@ td {
     background-color: #d8d8d1;
     padding: 20px;
     border: 5%;
-<<<<<<< HEAD
-
-}
-
-.main-register section {
-    border-color: #ff6633;
-}
-
-.input-register {
-    width: 80%;
-    margin: 15px;
-    padding: 8px;
-    border-radius: 8px;
-    border-color: #ff6633;
-}
-
-.main-register h4 {
-    text-align: left;
-    padding: 8px;
-=======
     box-shadow: 0px 0px 10px grey;
 }
 
@@ -399,10 +345,11 @@ td {
 }
 
 .main-register h4 {
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     padding: 8px;
-    margin: 5px;
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
+    margin: 1px;
+    border-radius: 8px;
 }
 
 .perfil-viajero input {
@@ -412,6 +359,8 @@ td {
 .perfil-viajero label {
     padding: 10px;
 }
+
+
 
 .info-personal {
     display: flex;
@@ -424,20 +373,13 @@ td {
 .perfil-viajero {
     text-align: left;
     padding: 8px;
-<<<<<<< HEAD
-=======
     justify-content: center;
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
 }
 
 .perfil-viajero div {
     padding: 15px;
 }
 
-<<<<<<< HEAD
-.categorias {
-    margin: 10px;
-=======
 .perfil-viajero div label {
     padding: 0px;
 }
@@ -447,7 +389,6 @@ td {
     width: 20px;
     height: 20px;
     border-radius: 8px;
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
 }
 
 .enviar-registro {
@@ -463,22 +404,14 @@ td {
 .enviar-registro:hover {
     background-color: #fe8b65;
 }
-<<<<<<< HEAD
-=======
 
 .derechos-register p{
     margin: 1px;
 }
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
 
 
 
 @media (min-width: 361px) {
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
     .input-register {
         width: 33%;
     }
@@ -489,24 +422,12 @@ td {
         justify-content: center;
     }
 
-<<<<<<< HEAD
-}
-
-@media (min-width: 769px) {
-
-
-    .tipo-viajero {
-=======
     .perfil-viajero{
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-<<<<<<< HEAD
-    .contraseña {
-=======
 }
 
 @media (min-width: 769px) {
@@ -514,7 +435,6 @@ td {
         padding: 8px;
     }
     .cuerpo-registro{
->>>>>>> 1ed6a3dddfbea70b626edd88ab7033e84011f4cb
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -560,7 +480,73 @@ td {
 
 }
 
+/* Estilos Login */
 
+.login-body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar-login, .logo-cuadrado{
+    display: none;
+}
+.main-login{
+    display: flex;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.encabezado-login{
+    background-color: #ebebe3;
+}
+.rigth-main{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    width: 90vw;
+    flex-direction: column;
+}
+.titulo-login{
+    font-size: 1.2em;
+}
+.forms{
+    margin: 15px 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+
+}
+.boton-ingresar{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ff6633;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.boton-nueva-cuenta{
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.rigth-main p{
+    text-align: center;
+    width: 30%;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+.rigth-main a{
+    color: #FFFFFF;
+}
+@media (min-width: 361px){
+    .logo-cuadrado{
+        display: flex;
+    }
+}
 
 
 /*.logo {
