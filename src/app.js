@@ -10,6 +10,6 @@ app.use('/',mainRouter);
 app.set('views',path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 
-app.listen(3200, () => {
+app.listen(process.env.PORT || 3200, () => {
     console.log('Servidor corriendo en puerto 3200')
 });
