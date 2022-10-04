@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoNemo</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- estandarizar visualización en navegadores-->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!-- iconos de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body>
+  <%- include('./partials/header') %>
+
+    <div class="informacion">
+      <h1> ISLA GRANDE BRASIL - 7 Días / 5 Noches </h1>
+    </div>
+
+    <div class="imagen-islas"> <img src="/images/islas.jpg"> </div>
+
+    <div class="tabla-de-informacion">
+      <table>
+        <thead>
+          <tr>
+            <th>Tarifa neta</th>
+            <th>Cargos administrativos</th>
+            <th>Impuestos</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>U$D 1200</td>
+            <td>U$D 5</td>
+            <td>U$D 200</td>
+            <td>U$D 1405</td>
+
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="fecha salida">
+      <h3>Fecha de salida</h3>
+      <input type="date" name="edad" min='1900-01-01' max="2010-01-01" class="control">
+    </div>
+    <button type="reset" class="boton-eliminar-destino">Borrar</button>
+    <div class="control-formulario">
+      <h3>Forma de pago</h3>
+      <label class="radio"><input type="radio" name="perfil"></input>Efectivo</label>
+      <label class="radio"><input type="radio" name="perfil"></input>Tarjeta</label>
+      <label class="radio"><input type="radio" name="perfil"></input>Transferencia bancaria</label>
+    </div>
+
+    <button type="submit" class="boton-pagar">Continuar con el pago</button>
+
+
+    </form>
+
+    <%- include('./partials/footer') %>
+
+</body>
+
+</html>
