@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuntoNemo</title>
+    <!-- estandarizar visualización en navegadores-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- iconos de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+        <div>
+            <img class="banner-addProduct" src="images/Group-of-friends-registro.jpg" alt="banner registro">
+        </div>
+        <main class="">
+
+            <section>
+                <div class="introduccion-register">
+                    <h2>Creación de productos</h2>
+                </div>
+                <form action="/addProduct" method="post">
+                    <h4>Información general</h4>
+                    <div class="">
+                        <input type="text" name="nombre" placeholder="Nombre producto" class="" minlength="4" required>
+                        <input type="text" name="nombre-usuario" placeholder="Descripción producto" class="" required>
+                    </div>
+                    <h4>Fotos de producto</h4>
+                    <div>
+                        <input type="file">
+                    </div>
+                    <h4>Categoria:</h4>
+                    <div class="perfil-viajero">
+                        <div>
+                            <input type="checkbox" name="tipo-viaje" value="familiar" class="categorias"
+                                id="familiar">
+                            <label for="familiar">Familiar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viaje" value="aventurero" class="categorias"
+                                id="aventurero">
+                            <label for="aventurero">Aventurero</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viaje" value="Lujoso" class="categorias" id="Lujoso">
+                            <label for="Lujoso">Lujoso</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tipo-viaje" value="cultural" class="categorias"
+                                id="cultural">
+                            <label for="cultural">Cultural</label>
+                        </div>
+                    </div>
+                    <h4>Duración viaje</h4>
+                    <div class="perfil-viajero">
+                        <div>
+                            <input type="checkbox" name="duracion-viaje" value="3 días" class="categorias"
+                                id="3 días">
+                            <label for="3 días">3 días</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="duracion-viaje" value="5 días" class="categorias"
+                                id="5 días">
+                            <label for="5 días">5 días</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="duracion-viaje" value="7 días" class="categorias" id="7 días">
+                            <label for="7 días">7 días</label>
+                        </div>
+                    </div>
+                    <h4>Precio</h4>
+                    <div class="">
+                        <input type="text" name="nombre" placeholder="Precio producto" class="" minlength="4" required>
+                    </div>
+                    <button type="submit" class="enviar-registro">Crear producto</button>
+                    <br>
+                </form>
+                
+            </section>
+        </main>
+        <%- include('./partials/footer') %>
+
+
+</body>
+
+</html>

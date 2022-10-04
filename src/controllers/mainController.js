@@ -16,5 +16,8 @@ var mainController = {
     register: (req, res) => {
         res.render('register');
     },
+    addProduct: (req, res) => {
+        res.render('addProduct');
+    },
 }
 module.exports = mainController;
