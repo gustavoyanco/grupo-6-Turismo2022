@@ -619,3 +619,13 @@ td {
     border-radius: 8px;
     box-shadow: 0px 0px 10px grey;
 } 
+
+.descripcion-addProduct{
+    margin-top: 10px;
+    width:50%;
+    height: 100px;
+}
+
+.main-addProduct{
+    text-align: center;
+}
