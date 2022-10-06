@@ -17,34 +17,89 @@
 <body>
   <%- include('./partials/header') %>
 
-    <div class="informacion">
-      <h1> ISLA GRANDE BRASIL - 7 Días / 5 Noches </h1>
-    </div>
+    <main>
+      <section id="blog-home" class="pt-5 mt-5 container">
+        <h2 class="font-weight-bold pt-5"> Carrito de compras </h2>
+        <hr>
+      </section>
 
-    <div class="imagen-islas"> <img src="/images/islas.jpg"> </div>
+      <section id="cart-container" class="container my-5">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Remover</td>
+              <td>Imagen</td>
+              <td>Producto</td>
+              <td>Precio</td>
+              <td>Cantidad de pasajeros</td>
+              <td>Total</td>
+            </tr>
+          </thead>
 
-    <div class="tabla-de-informacion">
-      <table>
-        <thead>
-          <tr>
-            <th>Tarifa neta</th>
-            <th>Cargos administrativos</th>
-            <th>Impuestos</th>
-            <th>TOTAL</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>U$D 1200</td>
-            <td>U$D 5</td>
-            <td>U$D 200</td>
-            <td>U$D 1405</td>
+          <tbody>
+            <tr>
+              <td> <a href="#"><span class="material-symbols-outlined">
+                    delete
+                  </span></a></td>
+              <td> <img src="public\images\puntoNemo-viaje01.png" alt=""></td>
+              <td>
+                <h5>Salinas Grandes - Jujuy
+                </h5>
+              </td>
+              <td>
+                <h5> $2000</h5>
+              </td>
+              <td><input class="w-25 pl-1" value="1" type="number"></td>
+              <td>
+                <h5>$4000</h5>
+              </td>
 
-          </tr>
-        </tbody>
-      </table>
+            </tr>
 
-    </div>
+            <tr>
+              <td> <a href="#"><span class="material-symbols-outlined">
+                    delete
+                  </span></a></td>
+              <td> <img src="public\images\img-0101.jpg" alt=""></td>
+              <td>
+                <h5>Isla Grande - Brasil 
+                </h5>
+              </td>
+              <td>
+                <h5> $6500</h5>
+              </td>
+              <td><input class="w-25 pl-1" value="1" type="number"></td>
+              <td>
+                <h5>$13000</h5>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td> <a href="#"><span class="material-symbols-outlined">
+                    delete
+                  </span></a></td>
+              <td> <img src="public\images\img-0106.jpg" alt=""></td>
+              <td>
+                <h5>Isla Lord Howe - Australia
+                </h5>
+              </td>
+              <td>
+                <h5> $30000</h5>
+              </td>
+              <td><input class="w-25 pl-1" value="1" type="number"></td>
+              <td>
+                <h5>$60000</h5>
+              </td>
+
+            </tr>
+
+          
+
+
+          </tbody>
+        </table>
+      </section>
 
 
 
@@ -52,24 +107,11 @@
 
 
 
-    <div class="fecha salida">
-      <h3>Fecha de salida</h3>
-      <input type="date" name="edad" min='1900-01-01' max="2010-01-01" class="control">
-    </div>
-    <button type="reset" class="boton-eliminar-destino">Borrar</button>
-    <div class="control-formulario">
-      <h3>Forma de pago</h3>
-      <label class="radio"><input type="radio" name="perfil"></input>Efectivo</label>
-      <label class="radio"><input type="radio" name="perfil"></input>Tarjeta</label>
-      <label class="radio"><input type="radio" name="perfil"></input>Transferencia bancaria</label>
-    </div>
-
-    <button type="submit" class="boton-pagar">Continuar con el pago</button>
 
 
-    </form>
 
-    <%- include('./partials/footer') %>
+      </form>
+      <%- include('./partials/footer') %>
 
 </body>
 

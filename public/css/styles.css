@@ -262,52 +262,63 @@ footer a:hover{
     padding: 0 15px 0 15px
 }
 
-
-
-
-
 /*Estilos carrito */
 
-
-table {
-    color: #333333;
-    font-size: 14px;
-    table-layout: fixed;
+#cart-container table {
     border-collapse: collapse;
+    width: 100%;
+    table-layout:fixed; 
 }
 
-thead {
-    background-color: #fa460a;
-}
-
-th {
-    padding: 20px 15px;
+#cart-container table thead{
     font-weight: 700;
-    text-transform: uppercase;
-
 }
 
-td {
-    padding: 15px;
-    border-bottom: solid 1px #fe8b65
-}
-
-.boton-pagar:hover {
-    background-color: #fa460a;
-}
-
-.boton-pagar {
-    width: 80%;
-    background-color: #ff6633;
-    border: none;
-    font-size: 20px;
+#cart-container table thead td {
+    background : #fd8c66 ;
     color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: all 450ms;
-    cursor: pointer
+    border : none ;
+    padding : 6px 0 ;
 }
+
+#cart-container table td {
+    border : 1px solid #b6b3b3 ;
+    text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+    width: 100px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+    width: 200px;
+} 
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+    width: 170px; 
+}
+
+#cart-container table tbody img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos register */
 
