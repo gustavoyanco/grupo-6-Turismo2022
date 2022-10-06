@@ -211,28 +211,55 @@ main section .viajeDetalle {
     display: none;
 }
 
-footer {
+footer{
     background-color: #333333;
-    display: flex;
+}
+
+footer h5,
+footer h6{
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2 rem; 
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
     font-size: 0.8rem;
-    justify-content: center;
+    color: #999
 }
 
-footer ul {
-    list-style: none;
+footer li a:hover{
+    font-size: 0.8rem;
+    color: #d8d8d8;
 }
 
-footer a {
-    color: #d8d8d1;
+footer p{
+    color: #ffffffd3;
+    font-size: 0.8rem; 
 }
 
-footer a:hover {
-    color: #ffffff;
+footer .copyright a{
+    color: #0000;
+    width: 38px;
+    height: 38;
+    background-color: #ffffff;
+    display:inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px; 
 }
 
-.logoFooter {
-    display: flex;
+footer .copyright a:hover{
+    color: #ffffff ;
+    background-color: #fb774b;  
 }
+
+
 
 /*estilos detalle producto */
 .boton-comprar-detalle-producto {
@@ -406,7 +433,7 @@ button:hover {
 }
 
 .second-hr {
-    background-color: #b8b7b3;
+    background: #b8b7b3;
     width : 100% ;
     height: 1px; 
 }
