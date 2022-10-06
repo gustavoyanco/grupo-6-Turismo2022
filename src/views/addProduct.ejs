@@ -20,7 +20,7 @@
         <div>
             <img class="banner-addProduct" src="images/Group-of-friends-registro.jpg" alt="banner registro">
         </div>
-        <main class="">
+        <main class="main-addProduct">
 
             <section>
                 <div class="introduccion-register">
@@ -29,8 +29,10 @@
                 <form action="/addProduct" method="post">
                     <h4>Información general</h4>
                     <div class="">
-                        <input type="text" name="nombre" placeholder="Nombre producto" class="" minlength="4" required>
-                        <input type="text" name="nombre-usuario" placeholder="Descripción producto" class="" required>
+                        <input type="text" name="nombreProducto" placeholder="Nombre producto" class="input-addProduct"  required>
+                    </div>
+                    <div>
+                        <input type="text" name="descripcionProducto" placeholder="Descripción producto" class="descripcion-addProduct" required>
                     </div>
                     <h4>Fotos de producto</h4>
                     <div>
@@ -39,21 +41,21 @@
                     <h4>Categoria:</h4>
                     <div class="perfil-viajero">
                         <div>
-                            <input type="checkbox" name="tipo-viaje" value="familiar" class="categorias"
+                            <input type="checkbox" name="tipo-viaje" value="familiar" class="categoriasViaje"
                                 id="familiar">
                             <label for="familiar">Familiar</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="tipo-viaje" value="aventurero" class="categorias"
+                            <input type="checkbox" name="tipo-viaje" value="aventurero" class="categoriasViaje"
                                 id="aventurero">
                             <label for="aventurero">Aventurero</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="tipo-viaje" value="Lujoso" class="categorias" id="Lujoso">
+                            <input type="checkbox" name="tipo-viaje" value="Lujoso" class="categoriasViaje" id="Lujoso">
                             <label for="Lujoso">Lujoso</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="tipo-viaje" value="cultural" class="categorias"
+                            <input type="checkbox" name="tipo-viaje" value="cultural" class="categoriasViaje"
                                 id="cultural">
                             <label for="cultural">Cultural</label>
                         </div>
@@ -61,25 +63,28 @@
                     <h4>Duración viaje</h4>
                     <div class="perfil-viajero">
                         <div>
-                            <input type="checkbox" name="duracion-viaje" value="3 días" class="categorias"
+                            <input type="checkbox" name="duracion-viaje" value="3 días" class="DuracionViaje"
                                 id="3 días">
                             <label for="3 días">3 días</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="duracion-viaje" value="5 días" class="categorias"
+                            <input type="checkbox" name="duracion-viaje" value="5 días" class="DuracionViaje"
                                 id="5 días">
                             <label for="5 días">5 días</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="duracion-viaje" value="7 días" class="categorias" id="7 días">
+                            <input type="checkbox" name="duracion-viaje" value="7 días" class="DuracionViaje" id="7 días">
                             <label for="7 días">7 días</label>
                         </div>
                     </div>
                     <h4>Precio</h4>
                     <div class="">
-                        <input type="text" name="nombre" placeholder="Precio producto" class="" minlength="4" required>
+                        <input type="text" name="precioProducto" placeholder="Precio producto" class="input-addProduct" minlength="4" required>
                     </div>
-                    <button type="submit" class="enviar-registro">Crear producto</button>
+                    <br>
+                    <br>
+                    <button type="submit" class="crearProducto">Crear producto</button>
+                    <br>
                     <br>
                 </form>
                 
