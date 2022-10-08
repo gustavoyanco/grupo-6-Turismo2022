@@ -42,6 +42,8 @@ a:hover {
     margin: auto;
 }
 
+
+
 .headerBusquedaBotones {
     display: flex;
     flex: wrap;
@@ -241,14 +243,19 @@ footer p{
     font-size: 0.8rem; 
 }
 
+.tarjeta {
+    max-width: 220px;
+    max-height: 220px ; 
+}
+
 footer .copyright a{
     color: #2c2c2c;
-    width: 38px;
-    height: 38;
+    width: 50px;
+    height: 50px;
     background-color: #ffffff;
     display:inline-block;
     text-align: center;
-    line-height: 38px;
+    line-height: 50px;
     border-radius: 50%;
     transition: 0.3s ease;
     margin: 0 5px; 
@@ -256,8 +263,35 @@ footer .copyright a{
 
 footer .copyright a:hover{
     color: #ffffff ;
-    background-color: #fb774b;  
+    background-color: #ff6633;  
 }
+
+footer .copyright i {
+    position: relative;
+    z-index: 4;
+    line-height: 50px;
+    font-size: 26px;
+    transition: 0.1s ease-in-out; 
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
