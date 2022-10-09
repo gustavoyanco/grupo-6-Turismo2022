@@ -42,40 +42,46 @@ a:hover {
     margin: auto;
 }
 
-
-
-.headerBusquedaBotones {
-    display: flex;
-    flex: wrap;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-
-.headerBusquedaBotones .burgerMenu {
-    color: #cc0000;
-    font-size: 2rem;
-    margin-right: 2px;
-    border: solid 2px #cc0000;
-    border-radius: 15%;
-}
-
-.headerBusquedaBotones form {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: bottom;
-}
-
-.headerBusquedaBotones button {
-    color: #FFFFFF;
-    padding: 5px;
-    border: none;
+header .logoss a{
+    color: #2c2c2c;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    display:inline-block;
+    text-align: center;
+    line-height: 50px;
     border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px; 
 }
 
-.headerBusquedaBotones button:hover {
-    font-weight: 600;
-    color: #ff6633;
+header .logoss a:hover{
+    color: #ffffff ;
+    background-color: #ff6633;  
 }
+
+header .logoss i {
+    position: relative;
+    z-index: 4;
+    line-height: 50px;
+    font-size: 26px;
+    transition: 0.1s ease-in-out; 
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*carrousel*/
 [carrousel] {

@@ -3,37 +3,52 @@
     <a href="/">
       <img src="/images/PuntoNemoLogoHorizontal.svg"></a>
   </div>
-  <div class="containerBarra">
-    <div class="navBar">
-      <ul>
-        <li><a href="#">Destinos <span class="material-symbols-outlined">
-              arrow_drop_down</a></li></span>
-        <li><a href="#">Paquetes <span class="material-symbols-outlined">
-              arrow_drop_down</a></li></span>
-        <li><a href="#">Próximas salidas <span class="material-symbols-outlined">
-              arrow_drop_down</a></li></span>
-        <li><a href="#">Quiénes somos <span class="material-symbols-outlined">
-              arrow_drop_down</a></li></span>
-        <li><a href="#">Contacto <span class="material-symbols-outlined">
-              arrow_drop_down</a></li></span>
-        <li><a href="/register">Registro<span class="material-symbols-outlined">
-                arrow_drop_down</a></li></span>
-      </ul>
-    </div>
-    <div class="headerBusquedaBotones">
-      <span class="burgerMenu">
-        <button class="material-symbols-outlined" type="submit">menu</button>
-      </span>
-      <form action="#" method="GET">
-        <input type="text" name="buscar" placeholder="Buscar viajes y destinos" class="input" id="buscar">
-        <button class="material-symbols-outlined" type="submit">search</button>
-      </form>
-      <a href="login">
-        <button class="material-symbols-outlined">login</button></a>
-      <a href="/productCart">
-        <button class="material-symbols-outlined">shopping_cart</button></a>
-    </div>
-    </div>
 
-  </div>
+
+  <nav class="navbar navbar-expand-lg bg-light py-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/register">Registro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Próximas salidas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Información
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Consultas o reservas</a></li>
+              <li><a class="dropdown-item" href="#">Consejos de viaje</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Blog</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar destino" aria-label="search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+
+        <div class = "logoss">
+          <a href="login">
+            <i class="fas fa-sign-in-alt"></i></a>
+          <a href="/productCart">
+            <i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </nav>
 </header>
