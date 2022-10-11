@@ -13,7 +13,9 @@ app.use('/',mainRouter);
 app.set('views',path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 
+//Ruta Productos 
 app.use('/productos', rutasProductos);
+
 
 app.listen(process.env.PORT || 3200, () => {
     console.log('Servidor corriendo en puerto 3200')
