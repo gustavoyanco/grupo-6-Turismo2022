@@ -20,3 +20,4 @@ app.use('/productos', rutasProductos);
 app.listen(process.env.PORT || 3200, () => {
     console.log('Servidor corriendo en puerto 3200')
 });
+
