@@ -1,8 +1,13 @@
 const path = require ('path');
+const fs = require ('fs')
+
+const productsFilePath = path.join(__dirname, '../data/productsData.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 var mainController = {
     index: (req, res) => {
-        res.render('index',);
+        res.render('index', {products});
     },
     login: (req, res) => {
         res.render('login');
@@ -10,14 +15,9 @@ var mainController = {
     productCart: (req, res) => {
         res.render('productCart');
     },
-    productDetail: (req, res) => {
-        res.render('productDetail');
-    },
     register: (req, res) => {
         res.render('register');
     },
-    addProduct: (req, res) => {
-        res.render('addProduct');
-    },
+   
 }
 module.exports = mainController;

@@ -1,10 +1,23 @@
 
 const express = require('express');
-
 const router = express.Router()  ;
+const productsController = require ('../controllers/productsController')
 
-router.get('/:idproductos', function(req, res) {
-    res.send ("Esto es el detalle del producto" + req.params.idProducto) ; 
-}) ;
+// Pagina de productos
+router.get ('/', productsController.index);
 
-module.exports = router ;
+// Creación de productos
+router.get ('/create', productsController.create);
+router.post ('/', productsController.store);
+
+// Detalle de producto
+router.get ('/:id', productsController.detail);
+
+// Edición de producto
+router.get ('/:id/edit', productsController.edit);
+router.put ('/', productsController.update);
+
+
+
+
+module.exports = router;
