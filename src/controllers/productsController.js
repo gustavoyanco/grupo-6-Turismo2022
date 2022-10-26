@@ -12,7 +12,7 @@ const controller = {
     detail:(req, res) => {
         let {id} = req.params
         let productoEncontrado = products.filter (product => product.id == id)
-		res.render ("productDetail")
+		res.render ("productDetail", {products:productoEncontrado})
     },    
     create: (req, res) => {
 		res.render ("addProduct")
@@ -28,12 +28,26 @@ const controller = {
         res.redirect ('/')
     },
     edit: (req, res) => {
-        res.render ('editProduct')
+        res.render ('editProduct', {products})
     },
     update:(req, res) => {
-        console.log (req.body)
+        let {id} = req.params
+        let productoEditar = products.filter (product =>product.id == id)
+
+        productoEditar = {
+            id: productoEditar.id,
+            ...req.body
+        }
+
         res.redirect ('/')
-    },    
+    },
+    destroy: (req,res) => {
+        let id = req.params.id
+        let productosFinales = products.filter (product => product.id != id)
+        console.log (id)
+
+        res.redirect ("/")
+    }    
 }
 
 module.exports = controller
