@@ -39,12 +39,14 @@ const controller = {
             ...req.body
         }
 
+        console.log (productoEditar)
         res.redirect ('/')
+
     },
     destroy: (req,res) => {
         let id = req.params.id
         let productosFinales = products.filter (product => product.id != id)
-        console.log (id)
+        console.log (productosFinales)
 
         res.redirect ("/")
     }    
