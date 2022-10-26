@@ -13,6 +13,10 @@ Retrospectiva Sprint 1 : Como grupo pudimos consolidar bastante bien desde el pr
 
 Retrospectiva Sprint 2 : En cuanto a las actividades nos dividimos las tareas para agilizar tiempos y que cada integrante supiera que hacer, pusimos como premisa principal, avisar en el grupo de Slack cada vez que alguien suba o modifique un archivo y evitar conflictos, aún así tuvimos dificultades ya que a todos se nos junto con el proyecto individual . Cosas para mejorar: empezar lo antes posible con el Sprint y darle un seguimiento diario a las tareas pendientes (Trello). 
 
+Retrocpectiva Sprint 3 : En este sprint pudimos cumplir todos los requisitos , cada uno aporto su parte y nos juntabamos para debatir sobre los cambios. 
+
+Retrospectiva Sprint 4 : No pudimos cumplir con todas las expectativas para este sprint , ya que por cuestiones de tiempo varios de nosotros no pudimos aportar mucho al proyecto , nos propusimos como grupo ponernos al día ,  para llegar a cumplir todos los requisitos pedidos . 
+
 
 Acerca de los integrantes del equipo:
 
