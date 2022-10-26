@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PuntoNemo</title>
   <!-- icono de pestaña-->
-  <link rel="icon" href="\images\icon.png">
+  <link rel = "icon" href = "\images\icon.png">
   <link rel="stylesheet" href="/css/styles.css">
   <!-- estandarizar visualización en navegadores-->
   <link rel="stylesheet" href="/css/normalize.css">
@@ -21,7 +21,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <!-- iconos de FontAwesome -->
-  <script src="https://kit.fontawesome.com/0ffcf80e36.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0ffcf80e36.js" crossorigin="anonymous"></script> 
 
 </head>
 
@@ -35,29 +35,24 @@
       <main>
         <div class="mainPhrase">
           <h2>Elegí tu próximo destino</h2>
-          <h1>en Punto Nemo nos encargamos del resto</h1>
+          <h1>en Punto Nemo nos encargamos del resto</h1>  
         </div>
 
-        <% products.forEach(products=>{ %>
-          <div>
-            <section class="mainViajes">
-              <a href="/productos/<%= products.id %> ">
-                <article class="viaje">
-                  <img src="/images/<%= products.imagen %>" alt="imagen del producto">
-                  <div class="viajeDetalle">
-                    <p class="destinoNombre">
-                      <%= products.nombre %>
-                    </p>
-                    <p class="destinoLugar">
-                      <%= products.lugar %>
-                    </p>
-                    <p class="destinoDuracion">
-                      <%= products.duracion %>
-                    </p>
-                  </div>
-            </section>
-          </div>
-          <% }) %>
+        
+        <% products.forEach(products =>{ %> 
+        <div>
+        <section class="mainViajes">
+          <a href="/productos/<%= products.id %> ">
+            <article class="viaje">
+              <img src="/images/<%= products.imagen %>" alt = "imagen del producto">
+              <div class="viajeDetalle">
+                <p class="destinoNombre"><%= products.nombre %> </p>
+                <p class="destinoLugar"><%= products.lugar %> </p>
+                <p class="destinoDuracion"><%= products.duracion %></p>
+              </div>    
+        </section>
+        </div>
+        <% }) %> 
       </main>
 
       <%- include('./partials/footer') %>

@@ -35,9 +35,9 @@
 
             <section>
                 <div class="introduccion-register">
-                    <h2>Creación de productos</h2>
+                    <h2>Edición de Productos</h2>
                 </div>
-                <form action="/productos" method="POST">
+                <form action="/productos/?_method=PUT" method="POST">
                     <h4>Información general</h4>
                     <div class="">
                         <input type="text" name="nombreProducto" placeholder="Nombre producto" class="input-addProduct"
@@ -98,11 +98,12 @@
                     </div>
                     <br>
                     <br>
-                    <button type="submit" class="crearProducto">Crear producto</button>
+                    <button type="submit" class="crearProducto">Editar producto</button>
                     <br>
                     <br>
                 </form>
-
+                
+            
             </section>
         </main>
         <%- include('./partials/footer') %>
