@@ -15,7 +15,7 @@ Retrospectiva Sprint 2 : En cuanto a las actividades nos dividimos las tareas pa
 
 Retrocpectiva Sprint 3 : En este sprint pudimos cumplir todos los requisitos , cada uno aporto su parte y nos juntabamos para debatir sobre los cambios. 
 
-Retrospectiva Sprint 4 : No pudimos cumplir con todas las expectativas para este sprint , ya que por cuestiones de tiempo varios de nosotros no pudimos aportar mucho al proyecto , nos propusimos como grupo ponernos al día ,  para llegar a cumplir todos los requisitos pedidos . 
+Retrospectiva Sprint 4 : No pudimos cumplir con todas las expectativas para este sprint , ya que por cuestiones de tiempo varios de nosotros no pudimos aportar mucho al proyecto , nos propusimos como grupo ponernos al día ,  para llegar a cumplir todos los requisitos pedidos para los siguentes sprint . 
 
 
 Acerca de los integrantes del equipo:
