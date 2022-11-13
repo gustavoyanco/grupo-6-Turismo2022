@@ -28,3 +28,8 @@ app.listen(process.env.PORT || 3200, () => {
     console.log('Servidor corriendo en puerto 3200')
 });
 
+//Ruta ERROR 404 
+
+app.use ((req,res,next) => {
+    res.status (404).render ('not-found')
+}) ;  
