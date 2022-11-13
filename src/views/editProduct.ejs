@@ -37,7 +37,7 @@
                 <div class="introduccion-register">
                     <h2>Edición de Productos</h2>
                 </div>
-                <form action="/productos/?_method=PUT" method="POST">
+                <form action="/productos/<%=product.id%>/edit?_method=PUT" method="POST">
                     <h4>Información general</h4>
                     <div class="">
                         <input type="text" name="nombreProducto" placeholder="Nombre producto" class="input-addProduct"

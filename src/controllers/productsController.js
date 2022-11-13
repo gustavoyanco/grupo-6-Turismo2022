@@ -11,7 +11,7 @@ const controller = {
 	},
     detail:(req, res) => {
         let {id} = req.params
-        let productoEncontrado = products.filter (product => product.id == id)
+        let productoEncontrado = products.find (product => product.id == id)
 		res.render ("productDetail", {products:productoEncontrado})
     },    
     create: (req, res) => {
@@ -28,24 +28,34 @@ const controller = {
         res.redirect ('/')
     },
     edit: (req, res) => {
-        res.render ('editProduct', {products})
+        let {id} = req.params
+        let productoEditar = products.find (product =>product.id == id)
+        res.render ('editProduct', {product:productoEditar})
     },
     update:(req, res) => {
         let {id} = req.params
-        let productoEditar = products.filter (product =>product.id == id)
+        let productoEditar = products.find (product =>product.id == id)
 
-        productoEditar = {
-            id: productoEditar.id,
-            ...req.body
-        }
+        // productoEditar = {
+        //     id: productoEditar.id,
+        //     ...req.body,
+        //     imagen: productoEditar.imagen
+        // }
 
+        // let nuevosProductos = products.map (product => {
+        //     if (product.id == productoEditar.id){
+        //         return product = {...productoEditar}
+        //     }
+        //     return product
+        // })
+        // fs.writeFileSync (productsFilePath, JSON.stringify (nuevosProductos, null, ' ' ))
         res.redirect ('/')
     },
     destroy: (req,res) => {
         let id = req.params.id
         let productosFinales = products.filter (product => product.id != id)
-        console.log (id)
-
+        
+        fs.writeFileSync (productsFilePath, JSON.stringify (productosFinales, null, ' ' ))
         res.redirect ("/")
     }    
 }

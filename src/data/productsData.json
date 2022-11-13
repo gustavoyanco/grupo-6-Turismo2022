@@ -58,5 +58,15 @@
   "duracion": 19,
   "precio": 568486,
   "lugar": "Wsefsa"
+ },
+ {
+  "id": 7,
+  "nombre": "asdas",
+  "lugar": "asdasd",
+  "descripcion": "asdasd",
+  "categoria": "aventurero",
+  "duracion": "5 días",
+  "precio": "54545",
+  "imagen": "img-0106.jpg"
  }
 ]
