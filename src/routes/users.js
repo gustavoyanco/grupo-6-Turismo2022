@@ -21,5 +21,6 @@ const upload = multer ({storage});
 router.get ('/', usersController.index)
 router.get ('/register', usersController.register)
 router.post ('/register',upload.any(), usersController.create)
+router.get ('/login', usersController.login)
 
 module.exports = router

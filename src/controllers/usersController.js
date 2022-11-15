@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const bcrypt = require ('bcryptjs')
 
 const usersFilePath = path.join(__dirname, '../data/usersData.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -14,7 +15,7 @@ const controller = {
     create: (req, res) => {
 
         let imagen
-		console.log(req.files);
+		
 		if(req.files[0] != undefined){
 			imagen = req.files[0].filename
 		} else {
@@ -26,12 +27,17 @@ const controller = {
             ... req.body,
             imagen: imagen
         }
-        console.log (newUser)
-        users.push (newUser)
-        fs.writeFileSync (usersFilePath, JSON.stringify(users, null, ' '))
-        res.redirect ('/')
+
+        newUser.password = bcrypt.hashSync (req.body.password, 10)
+        delete newUser.rePassword
        
-    }       
+        let usersNews = [...users, newUser]
+        fs.writeFileSync (usersFilePath, JSON.stringify(usersNews, null, ' '))
+        res.redirect ('/') 
+    },
+    login: (req, res) => {
+        res.render ('login')
+    }          
 }
 
 module.exports = controller;

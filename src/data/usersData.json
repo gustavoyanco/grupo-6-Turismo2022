@@ -98,5 +98,17 @@
   "contraseña": "IzKCc3PNl0G",
   "categoria": "ipsum",
   "imagen": "https://robohash.org/cupiditatequiaeius.jpg?size=50x50&set=set1"
+ },
+ {
+  "id": 11,
+  "nombre": "Nicolas",
+  "apellido": "Leon",
+  "usuario": "aasd",
+  "email": "nicolasleonv12@gmail.com",
+  "domicilio": "asdasd",
+  "fechaNacimiento": "2022-11-09",
+  "categoria": "aventurero",
+  "password": "$2a$10$ZRee/zhIdEFFhqM0KWAp0OJfc20aXvVigLnBgZiUg/SoCFLd7c4v2",
+  "imagen": "userImagen-1668482439009.jpg"
  }
 ]
