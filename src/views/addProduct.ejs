@@ -37,7 +37,7 @@
                 <div class="introduccion-register">
                     <h2>Creación de productos</h2>
                 </div>
-                <form action="/productos" method="POST">
+                <form action="/productos" method="POST" enctype="multipart/form-data">
                     <h4>Información general</h4>
                     <div class="">
                         <input type="text" name="nombre" placeholder="Nombre del viaje" class="input-addProduct"
@@ -49,9 +49,9 @@
                         <input type="text" name="descripcion" placeholder="Descripción del viaje"
                             class="descripcion-addProduct" required>
                     </div>
-                    <h4>Fotos de producto</h4>
+                    <h4>Foto de producto</h4>
                     <div>
-                        <input type="file">
+                        <input type="file" name="imagen">
                     </div>
                     <h4>Categoria:</h4>
                     <div class="perfil-viajero">

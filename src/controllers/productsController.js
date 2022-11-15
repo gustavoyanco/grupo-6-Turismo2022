@@ -18,10 +18,19 @@ const controller = {
 		res.render ("addProduct")
 	},
     store: (req, res) => {
+        
+        let imagen
+		console.log(req.files);
+		if(req.files[0] != undefined){
+			imagen = req.files[0].filename
+		} else {
+			imagen = 'default-image.png'
+		}
+
         let newProduct = {
             id: products[products.length - 1].id + 1,
             ... req.body,
-            imagen:'default-image.png'
+            imagen: imagen
         }
         products.push (newProduct)
         fs.writeFileSync (productsFilePath, JSON.stringify(products, null, ' '))

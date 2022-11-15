@@ -34,7 +34,7 @@
         <img class="banner-registro" src="images/Group-of-friends-registro.jpg" alt="banner registro">
         <img class="banner-registro2" src="images/group-of-friends-relaxing.jpg" alt="banner registro">
       </div>
-
+      
       <main class="main-register">
 
         <section>
@@ -43,15 +43,21 @@
             <h2>Punto Nemo</h2>
             <p>Acá podrás agendar y organizar el viaje de tus sueños</p>
           </div>
-          <form action="/registro" method="post">
+          <form action="/users/register" method="POST" enctype="multipart/form-data">
             <h4>Crea tu Cuenta</h4>
             <div class="info-personal">
-              <input type="text" name="nombre" placeholder="Nombre completo" class="input-register" minlength="4"
+              <input type="text" name="nombre" placeholder="Nombre" class="input-register" minlength="4"
                 required>
-              <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="input-register"
+              <input type="text" name="apellido" placeholder="Apellido" class="input-register" minlength="4"
+                required>
+              <input type="text" name="usuario" placeholder="Nombre de usuario" class="input-register"
                 minlength="4" required>
               <input type="email" name="email" placeholder="Email" class="input-register" required>
               <input type="text" name="domicilio" placeholder="Domicilio" class="input-register" required>
+            </div>
+            <h4>Imagen de perfil</h4>
+            <div>
+              <input type="file" name="userImagen" class="input-register" required>
             </div>
             <h4>Fecha de Nacimiento</h4>
             <div class="fecha-nacimiento">
@@ -60,20 +66,20 @@
             <h4>Perfil Viajero:</h4>
             <div class="perfil-viajero">
               <div>
-                <input type="checkbox" name="tipo-viajero" value="familiar" class="categoriasRegister" id="familiar">
+                <input type="checkbox" name="categoria" value="familiar" class="categoriasRegister" id="familiar">
                 <label for="familiar">Familiar</label>
               </div>
               <div>
-                <input type="checkbox" name="tipo-viajero" value="aventurero" class="categoriasRegister"
+                <input type="checkbox" name="categoria" value="aventurero" class="categoriasRegister"
                   id="aventurero">
                 <label for="aventurero">Aventurero</label>
               </div>
               <div>
-                <input type="checkbox" name="tipo-viajero" value="Lujoso" class="categoriasRegister" id="Lujoso">
+                <input type="checkbox" name="categoria" value="Lujoso" class="categoriasRegister" id="Lujoso">
                 <label for="Lujoso">Lujoso</label>
               </div>
               <div>
-                <input type="checkbox" name="tipo-viajero" value="cultural" class="categoriasRegister" id="cultural">
+                <input type="checkbox" name="categoria" value="cultural" class="categoriasRegister" id="cultural">
                 <label for="cultural">Cultural</label>
               </div>
             </div>
