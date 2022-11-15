@@ -58,15 +58,5 @@
   "duracion": 19,
   "precio": 568486,
   "lugar": "Wsefsa"
- },
- {
-  "id": 7,
-  "nombre": "asdasd",
-  "lugar": "asdasd",
-  "descripcion": "asdasdas",
-  "categoria": "Lujoso",
-  "duracion": "7 días",
-  "precioProducto": "5545",
-  "imagen": "imagen-1668477773631.jpg"
  }
 ]

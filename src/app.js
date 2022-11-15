@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: false })); // Procesamiento de formulario
 app.use(express.json()); // Lecturas de JSON
 app.use(methodOverride('_method')) // Configuración Put y Delete
 
-app.use
 
 
 app.set('views',path.join(__dirname, 'views')); // Configuración carpeta views
