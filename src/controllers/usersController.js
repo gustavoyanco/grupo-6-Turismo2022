@@ -37,6 +37,31 @@ const controller = {
     },
     login: (req, res) => {
         res.render ('login')
+    },
+    autenticate: (req, res) =>{
+
+        const {email, password} = req.body;
+
+        let user = user.find (user => user.email == email)
+
+        if (user) {
+
+            if (bcrypt.compareSync (password, user.password)){
+
+                delete user.password;
+
+                req.session.user = user
+            };
+        }else {
+            return res.render ('login', {
+                old: req.body,
+                errors: {
+                    email: "El email o la contraseña son invalidos"
+                }
+            });
+        }
+
+
     }          
 }
 

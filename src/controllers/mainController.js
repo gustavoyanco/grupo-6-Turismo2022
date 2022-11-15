@@ -9,9 +9,9 @@ var mainController = {
     index: (req, res) => {
         res.render('index', {products});
     },
-    // login: (req, res) => {
-    //     res.render('login');
-    // },
+    login: (req, res) => {
+        res.render('login');
+    },
     productCart: (req, res) => {
         res.render('productCart');
     },
