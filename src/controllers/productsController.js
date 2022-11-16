@@ -18,10 +18,19 @@ const controller = {
 		res.render ("addProduct")
 	},
     store: (req, res) => {
+        
+        let imagen
+		console.log(req.files);
+		if(req.files[0] != undefined){
+			imagen = req.files[0].filename
+		} else {
+			imagen = 'default-image.png'
+		}
+
         let newProduct = {
             id: products[products.length - 1].id + 1,
             ... req.body,
-            imagen:'default-image.png'
+            imagen: imagen
         }
         products.push (newProduct)
         fs.writeFileSync (productsFilePath, JSON.stringify(products, null, ' '))
@@ -30,32 +39,34 @@ const controller = {
     edit: (req, res) => {
         let {id} = req.params
         let productoEditar = products.find (product =>product.id == id)
-        res.render ('editProduct', {product:productoEditar})
+        res.render ('editProduct', {products:productoEditar})
     },
     update:(req, res) => {
         let {id} = req.params
         let productoEditar = products.find (product =>product.id == id)
 
-        // productoEditar = {
-        //     id: productoEditar.id,
-        //     ...req.body,
-        //     imagen: productoEditar.imagen
-        // }
+        productoEditar = {
+            id: productoEditar.id,
+            ...req.body,
+            image: 'default-image.png'
+        }
 
-        // let nuevosProductos = products.map (product => {
-        //     if (product.id == productoEditar.id){
-        //         return product = {...productoEditar}
-        //     }
-        //     return product
-        // })
-        // fs.writeFileSync (productsFilePath, JSON.stringify (nuevosProductos, null, ' ' ))
+        let productoEditado = products.map (product => {
+            if (product.id == productoEditar.id){
+                return product = {...productoEditar}
+            }
+            return product
+        })
+
+        fs.writeFileSync (productsFilePath, JSON.stringify (productoEditado, null, ' '))
         res.redirect ('/')
+
     },
     destroy: (req,res) => {
         let id = req.params.id
         let productosFinales = products.filter (product => product.id != id)
-        
-        fs.writeFileSync (productsFilePath, JSON.stringify (productosFinales, null, ' ' ))
+        fs.writeFileSync (productsFilePath, JSON.stringify (productosFinales, null, ' '))
+
         res.redirect ("/")
     }    
 }

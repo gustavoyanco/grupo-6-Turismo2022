@@ -37,7 +37,7 @@
                 <div class="introduccion-register">
                     <h2>Creación de productos</h2>
                 </div>
-                <form action="/productos" method="POST">
+                <form action="/productos" method="POST" enctype="multipart/form-data">
                     <h4>Información general</h4>
                     <div class="">
                         <input type="text" name="nombre" placeholder="Nombre del viaje" class="input-addProduct"
@@ -49,28 +49,28 @@
                         <input type="text" name="descripcion" placeholder="Descripción del viaje"
                             class="descripcion-addProduct" required>
                     </div>
-                    <h4>Fotos de producto</h4>
+                    <h4>Foto de producto</h4>
                     <div>
-                        <input type="file">
+                        <input type="file" name="imagen">
                     </div>
                     <h4>Categoria del viaje:</h4>
                     <div class="perfil-viajero">
                         <div>
-                            <input type="checkbox" name="categoria" value="familiar" class="categoriaViaje"
+                            <input type="checkbox" name="categoria" value="familiar" class="categoriasViaje"
                                 id="familiar">
                             <label for="familiar">Familiar</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="categoria" value="aventurero" class="categoriaViaje"
+                            <input type="checkbox" name="categoria" value="aventurero" class="categoriasViaje"
                                 id="aventurero">
                             <label for="aventurero">Aventurero</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="categoria" value="Lujoso" class="categoriaViaje" id="Lujoso">
+                            <input type="checkbox" name="categoria" value="Lujoso" class="categoriasViaje" id="Lujoso">
                             <label for="Lujoso">Lujoso</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="categoria" value="cultural" class="categoriaViaje"
+                            <input type="checkbox" name="categoria" value="cultural" class="categoriasViaje"
                                 id="cultural">
                             <label for="cultural">Cultural</label>
                         </div>

@@ -1,0 +1,114 @@
+[
+ {
+  "id": 1,
+  "nombre": "Vladamir",
+  "apellido": "Sully",
+  "email": "vsully0@cam.ac.uk",
+  "usuario": "gravida",
+  "contraseña": "rugYCbP",
+  "categoria": "eu",
+  "imagen": "https://robohash.org/similiquesuntullam.bmp?size=50x50&set=set1"
+ },
+ {
+  "id": 2,
+  "nombre": "Edan",
+  "apellido": "Sedgebeer",
+  "email": "esedgebeer1@ed.gov",
+  "usuario": "in",
+  "contraseña": "1QwuWXOF",
+  "categoria": "lobortis",
+  "imagen": "https://robohash.org/eossapientemollitia.png?size=50x50&set=set1"
+ },
+ {
+  "id": 3,
+  "nombre": "Liane",
+  "apellido": "Wille",
+  "email": "lwille2@nbcnews.com",
+  "usuario": "rutrum",
+  "contraseña": "znfC2pT",
+  "categoria": "interdum",
+  "imagen": "https://robohash.org/aliquidmollitiaoccaecati.jpg?size=50x50&set=set1"
+ },
+ {
+  "id": 4,
+  "nombre": "Grethel",
+  "apellido": "Breach",
+  "email": "gbreach3@ed.gov",
+  "usuario": "id",
+  "contraseña": "LPQqsO4APRp",
+  "categoria": "vitae",
+  "imagen": "https://robohash.org/velutvoluptas.bmp?size=50x50&set=set1"
+ },
+ {
+  "id": 5,
+  "nombre": "Joell",
+  "apellido": "Rossbrook",
+  "email": "jrossbrook4@mapy.cz",
+  "usuario": "convallis",
+  "contraseña": "AI3k7E38n",
+  "categoria": "nulla",
+  "imagen": "https://robohash.org/mollitianisicorrupti.jpg?size=50x50&set=set1"
+ },
+ {
+  "id": 6,
+  "nombre": "Faustina",
+  "apellido": "Poad",
+  "email": "fpoad5@opera.com",
+  "usuario": "nascetur",
+  "contraseña": "wIKwKVyFFIr",
+  "categoria": "nisl",
+  "imagen": "https://robohash.org/sequiillovoluptatibus.bmp?size=50x50&set=set1"
+ },
+ {
+  "id": 7,
+  "nombre": "Shellie",
+  "apellido": "Kennaway",
+  "email": "skennaway6@illinois.edu",
+  "usuario": "odio",
+  "contraseña": "aiIvqCl",
+  "categoria": "consequat",
+  "imagen": "https://robohash.org/repellendusetcommodi.bmp?size=50x50&set=set1"
+ },
+ {
+  "id": 8,
+  "nombre": "Chaddie",
+  "apellido": "Thomazin",
+  "email": "cthomazin7@unblog.fr",
+  "usuario": "cras",
+  "contraseña": "8cqd9w",
+  "categoria": "non",
+  "imagen": "https://robohash.org/molestiasipsumdoloribus.jpg?size=50x50&set=set1"
+ },
+ {
+  "id": 9,
+  "nombre": "Ellette",
+  "apellido": "De Luna",
+  "email": "edeluna8@zimbio.com",
+  "usuario": "luctus",
+  "contraseña": "AdilHW0POB",
+  "categoria": "etiam",
+  "imagen": "https://robohash.org/aliquidmagniratione.png?size=50x50&set=set1"
+ },
+ {
+  "id": 10,
+  "nombre": "Goddart",
+  "apellido": "Offener",
+  "email": "goffener9@rediff.com",
+  "usuario": "sed",
+  "contraseña": "IzKCc3PNl0G",
+  "categoria": "ipsum",
+  "imagen": "https://robohash.org/cupiditatequiaeius.jpg?size=50x50&set=set1"
+ },
+ {
+  "id": 11,
+  "nombre": "Nicolas",
+  "apellido": "Leon",
+  "usuario": "aasd",
+  "email": "nicolasleonv12@gmail.com",
+  "domicilio": "asdasd",
+  "fechaNacimiento": "2022-11-09",
+  "categoria": "aventurero",
+  "password": "$2a$10$ZRee/zhIdEFFhqM0KWAp0OJfc20aXvVigLnBgZiUg/SoCFLd7c4v2",
+  "imagen": "userImagen-1668482439009.jpg"
+ }
+]
