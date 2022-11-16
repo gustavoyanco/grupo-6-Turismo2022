@@ -920,7 +920,7 @@ button:hover {
   }
   html, button, input, select, textarea {
       font-family: 'Montserrat', Helvetica, sans-serif;
-      color: #ffffff;
+      color: #1d1d1d ;
   }
   h1 {
     text-align: center;
