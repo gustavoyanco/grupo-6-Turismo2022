@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const user = {
-    fileName: './src/data/users.json',
+const User = {
+    fileName: './src/data/usersData.json',
     getData: function () {
         return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
     },
@@ -23,7 +23,7 @@ const user = {
         return userFound;
     },
     findByField: function (field, text) {
-        let allProducts = this.findAll();
+        let allUsers = this.findAll();
         let userFound = allUsers.find(oneUser => oneUser[field] === text);
         return userFound;
     },
@@ -44,4 +44,4 @@ const user = {
         return true;
     }
 }
-module.exports = user;
+module.exports = User;

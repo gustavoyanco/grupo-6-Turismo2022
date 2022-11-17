@@ -101,14 +101,26 @@
  },
  {
   "id": 11,
-  "nombre": "Nicolas",
-  "apellido": "Leon",
-  "usuario": "aasd",
-  "email": "nicolasleonv12@gmail.com",
-  "domicilio": "asdasd",
-  "fechaNacimiento": "2022-11-09",
+  "nombre": "Ruphus",
+  "apellido": "Dawes",
+  "usuario": "ruphus",
+  "email": "ruphus@dawes.com",
+  "domicilio": "Francia 1789",
+  "fechaNacimiento": "1984-01-01",
   "categoria": "aventurero",
-  "password": "$2a$10$ZRee/zhIdEFFhqM0KWAp0OJfc20aXvVigLnBgZiUg/SoCFLd7c4v2",
-  "imagen": "userImagen-1668482439009.jpg"
+  "password": "$2a$10$Mwfi65i0lsFyIwvBOF8yHegBxDFlggb8AyQj5a78gbQTTbhJZb9Oq",
+  "rePassword": "123456"
+ },
+ {
+  "id": 12,
+  "nombre": "Anakin",
+  "apellido": "Skywalker",
+  "usuario": "1234",
+  "email": "qwerty@qwerty",
+  "domicilio": "SL2A",
+  "fechaNacimiento": "2022-11-02",
+  "categoria": "Lujoso",
+  "password": "$2a$10$a9ZqnUwKb2MHBSXztlYG7ORS.2mqdn/ixSdjvnBGXpEg9N/i6GI4G",
+  "rePassword": "123456"
  }
 ]

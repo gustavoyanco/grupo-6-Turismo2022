@@ -5,22 +5,15 @@ const path = require ('path')
 
 const usersController = require ('../controllers/usersController')
 
-// Multer : para subir imagenes
-let storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-       cb(null,  path.join ('/Users/Nicolas León/Desktop/grupo-6-Turismo2022/public/images/usersImages'));
-    },
-    filename: (req, file, cb) => {
-        let imageName = file.fieldname + '-' + Date.now() + path.extname (file.originalname);
-        cb(null, imageName);
-    },
-});
-
-const upload = multer ({storage});
+//middlewares
+const upload = require('../middlewares/multerMiddleware');
+const validations = require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authenticationMiddleware = require('../middlewares/authenticationMiddleware');
 
 // router.get ('/', usersController.index)
-router.get ('/register', usersController.register)
-router.post ('/register',upload.any(), usersController.create)
+router.get ('/register', guestMiddleware, usersController.register)
+router.post ('/register',upload.any(), validations, usersController.processRegister)
 router.get ('/login', usersController.login)
 router.get ('/login', usersController.autenticate)
 

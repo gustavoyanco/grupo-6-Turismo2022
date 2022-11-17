@@ -1,6 +1,6 @@
 const fs = require ('fs');
 
-const Product = {
+const product = {
     fileName: './src/data/productsData.json',
     getData: function () {
         return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
@@ -20,4 +20,4 @@ const Product = {
     },
 
 }
-console.log(Product.findByPk(2));
+module.exports = product

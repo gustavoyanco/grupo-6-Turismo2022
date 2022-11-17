@@ -2,13 +2,16 @@ const path = require('path');
 const { body } = require('express-validator');
 
 module.exports = [
-	body('fullName').notEmpty().withMessage('Tienes que escribir un nombre'),
+	body('nombre').notEmpty().withMessage('Tienes que escribir tu nombre'),
+	body('apellido').notEmpty().withMessage('Tienes que escribir tu apellido'),
+	body('usuario').notEmpty().withMessage('Tienes que escribir tu nombre de usuario'),
 	body('email')
 		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de correo válido'),
 	body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
-	body('country').notEmpty().withMessage('Tienes que elegir un país'),
-	body('avatar').custom((value, { req }) => {
+	body('rePassword').notEmpty().withMessage('Tienes que confirmar tu contraseña'),
+	body('domicilio').notEmpty().withMessage('Tienes que escribir tu domicilio'),
+	body('userImage').custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];
 

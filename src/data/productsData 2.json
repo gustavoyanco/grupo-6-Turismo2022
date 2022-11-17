@@ -2,12 +2,22 @@
  {
   "id": 1,
   "nombre": "Isla Grande",
-  "descripcion": "Disfruta de un viaje increíble a una isla en el Mar Caribe, ubicada en el archipiélago colombiano de Corales del Rosario.",
-  "imagen": "isla-grande.jpg",
-  "categoria": "Familiar",
-  "duracion": "5 dias",
-  "precio": 140,
-  "lugar": "Colombia"
+  "descripcion": "ultricies eu nibh quisque id justo sit amet sapien dignissim",
+  "imagen": "img-0101.jpg",
+  "categoria": "vivamus",
+  "duracion": 27,
+  "precio": 908955,
+  "lugar": "Wsefsa"
+ },
+ {
+  "id": 2,
+  "nombre": "Rusocice",
+  "descripcion": "ut at dolor",
+  "imagen": "img-0102.jpg",
+  "categoria": "morbi",
+  "duracion": 16,
+  "precio": 235797,
+  "lugar": "Wsefsa"
  },
  {
   "id": 3,
@@ -48,15 +58,5 @@
   "duracion": 19,
   "precio": 568486,
   "lugar": "Wsefsa"
- },
- {
-  "id": 7,
-  "nombre": "asdas",
-  "lugar": "asdasd",
-  "descripcion": "asdasd",
-  "categoria": "aventurero",
-  "duracion": "5 días",
-  "precio": "54545",
-  "imagen": "img-0106.jpg"
  }
 ]
