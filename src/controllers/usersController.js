@@ -18,9 +18,6 @@ const controller = {
 				oldData: req.body
 			});
 		}
-		User.create(req.body);
-		return res.send('usuario guardado')
-		
 		let userInDB = User.findByField('email', req.body.email);
 
 		if (userInDB) {
@@ -41,7 +38,7 @@ const controller = {
 
 		let userCreated = User.create(userToCreate);
 
-		return res.redirect('/user/login');
+		return res.redirect('/login');
 
 	},
 
@@ -73,7 +70,7 @@ const controller = {
 			});
 		}
 
-		return res.render('userLoginForm', {
+		return res.render('login', {
 			errors: {
 				email: {
 					msg: 'No se encuentra este email en nuestra base de datos'
