@@ -17,6 +17,7 @@ Retrocpectiva Sprint 3 : En este sprint pudimos cumplir todos los requisitos , c
 
 Retrospectiva Sprint 4 : No pudimos cumplir con todas las expectativas para este sprint , ya que por cuestiones de tiempo varios de nosotros no pudimos aportar mucho al proyecto , nos propusimos como grupo ponernos al día ,  para llegar a cumplir todos los requisitos pedidos para los siguentes sprint . 
 
+Retrospectiva Sprint 5 : En este sprint logramos ponernos mas de acuerdo , como equipo cumplimos casi todos los requisitos , algo a mejorar es la comunicación entre nosotros , a veces se nos dificulta por los horarios que maneja cada uno , igualmente pactamos un día en la semana para un encuentro semanal por meet , allí debatimos sobre que falta y que mejorar , esto nos va ayudar mucho mas al crecimiento del grupo y a la finalización con éxito del sprint .  
 
 Acerca de los integrantes del equipo:
 
@@ -26,9 +27,6 @@ Soy de Buenos Aires , Argentina. Estoy estudiando Lic. en Sistemas y me anoté e
 Nicolás León
 Soy de Medellín, Colombia, tengo 26 años.
 Soy profesional en mercadeo digital, en mi experiencia laboral me he encontrado con CMS que me han acercado un poco al código. En el último año me ha interesado mucho y por eso decidí empezar a estudiar programación y desarrollo de sitios web.
-
-Francisco Nuñez
-Soy de Bs. As., ingeniero industrial UBA y laburo dentro de acquisition y growth. Me interesó el curso ya que estoy emprendiendo dentro del mundo digital y me faltaban conceptos de infraestructura.
 
 Gonzalo Ramírez
 Soy de Córdoba, tengo 26 años. Soy secretario docente de un colegio secundario desde hace 3 años.
